@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muyamba Muyamba | Laptops & Consoles</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+header {
+  background: #101827;
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+nav {
+  background: #26364d;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #101827;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.product, .contact-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #00000015;
+}
+
+.product {
+  text-align: center;
+}
+
+.product h3 {
+  color: #087f5b;
+}
+
+button {
+  background: #087f5b;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #065f46;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.contact-box p {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  background: #101827;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>MUYAMBA MUYAMBA</h1>
+  <p>Laptops and Gaming Consoles</p>
+  <p>Ndola, Zambia</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+  <a href="#inquiries">Inquiries</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome to Muyamba Muyamba</h2>
+  <p>
+    Looking for a laptop or gaming console?
+    Muyamba Muyamba helps customers discover products
+    for education, business, work and entertainment.
+    Explore our advertised products and contact us
+    for prices, specifications and availability.
+  </p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <h3>Laptops</h3>
+      <p>
+        Laptops for students, office work, business,
+        programming and everyday computing.
+      </p>
+      <p><strong>Product information:</strong></p>
+      <p>Ask about brand, processor, RAM, storage,
+      condition and battery life.</p>
+      <p><strong>Price:</strong> Contact us for the current price.</p>
+      <button onclick="enquire('Laptop')">
+        Enquire About Laptops
+      </button>
+    </div>
+
+    <div class="product">
+      <h3>Gaming Consoles</h3>
+      <p>
+        Gaming consoles for home entertainment
+        and enjoying your favourite games.
+      </p>
+      <p><strong>Product information:</strong></p>
+      <p>Ask about console brand, model, condition,
+      controllers and available games.</p>
+      <p><strong>Price:</strong> Contact us for the current price.</p>
+      <button onclick="enquire('Gaming Console')">
+        Enquire About Consoles
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Muyamba Muyamba advertises laptops and gaming consoles
+    to help customers find products that suit their needs.
+    We welcome questions about products, prices,
+    specifications and availability.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Information</h2>
+
+  <div class="contact-box">
+    <p><strong>Business Name:</strong> Muyamba Muyamba</p>
+    <p><strong>Products:</strong> Laptops and Gaming Consoles</p>
+    <p><strong>Location:</strong> Ndola, Zambia</p>
+    <p><strong>Email:</strong>
+      <a href="mailto:muyambamuyamba22@gmail.com">
+        muyambamuyamba22@gmail.com
+      </a>
+    </p>
+    <p>
+      <a href="mailto:muyambamuyamba22@gmail.com">
+        <button>Contact Us by Email</button>
+      </a>
+    </p>
+  </div>
+</section>
+
+<section id="inquiries">
+  <h2>Customer Inquiries</h2>
+
+  <div class="contact-box">
+    <p>
+      Want to know more about a product?
+      Complete this form to send your inquiry.
+    </p>
+
+    <form action="https://formsubmit.co/muyambamuyamba22@gmail.com"
+          method="POST">
+
+      <label for="name">Your Name</label>
+      <input id="name" type="text" name="name"
+             placeholder="Enter your name" required>
+
+      <label for="email">Your Email Address</label>
+      <input id="email" type="email" name="email"
+             placeholder="Enter your email address" required>
+
+      <label for="product">Select a Product</label>
+      <select id="product" name="product" required>
+        <option value="">Choose a product</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Gaming Console">Gaming Console</option>
+      </select>
+
+      <label for="message">Your Inquiry</label>
+      <textarea id="message" name="message" rows="5"
+                placeholder="Ask about price, specifications or availability"
+                required></textarea>
+
+      <input type="hidden" name="_subject"
+             value="New Muyamba Muyamba Product Inquiry">
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+
+    <p>
+      You can also send your questions directly to
+      muyambamuyamba22@gmail.com.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Muyamba Muyamba</p>
+  <p>Laptops | Gaming Consoles | Product Information</p>
+  <p>Ndola, Zambia</p>
+</footer>
+
+<script>
+function enquire(product) {
+  document.getElementById("product").value = product;
+  document.getElementById("inquiries").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
